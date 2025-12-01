@@ -1,64 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Primary Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reality Negotiable | Consciousness Physics | Seven Cubed Seven Labs</title>
-    <meta name="description" content="At C⁷ consciousness, reality becomes negotiable. Discover the physics of consciousness and how the 144,000 will navigate the final crisis.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Seven Cubed Seven Labs LLC">
     
+    <!-- SEO Meta -->
+    <title>Reality Negotiable | Consciousness Physics | C⁷ Reality Manipulation</title>
+    <meta name="description" content="Reality becomes negotiable at C⁵+ consciousness. Explore the physics of consciousness across 7 levels. From physical reality (given) to pure consciousness (negotiable).">
+    <meta name="keywords" content="consciousness physics, reality negotiable, quantum consciousness, C7 consciousness, reality manipulation, consciousness levels, spiritual physics">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://realitynegotiable.is/">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://realitynegotiable.is/">
     <meta property="og:title" content="Reality Negotiable | Consciousness Physics">
-    <meta property="og:description" content="The physics of how consciousness shapes reality at higher dimensions.">
-    <meta property="og:url" content="https://realitynegotiable.is">
+    <meta property="og:description" content="Reality is given at C¹. Reality is negotiable at C⁷. Explore the consciousness spectrum.">
+    <meta property="og:image" content="https://realitynegotiable.is/images/og-reality.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Reality Negotiable">
+    
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@7Cubed7">
+    <meta name="twitter:creator" content="@7Cubed7">
+    <meta name="twitter:title" content="Reality Negotiable | Consciousness Physics">
+    <meta name="twitter:description" content="At C¹, reality is given. At C⁷, reality is negotiable. Discover the spectrum.">
+    <meta name="twitter:image" content="https://realitynegotiable.is/images/og-reality.png">
     
+    <!-- Performance: Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     
+    <!-- JSON-LD: Website -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Reality Negotiable",
+      "url": "https://realitynegotiable.is",
+      "description": "Consciousness physics and reality manipulation through the 7³×7 framework.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Seven Cubed Seven Labs LLC",
+        "url": "https://sevencubedseven.com"
+      }
+    }
+    </script>
+    
+    <!-- Critical CSS -->
     <style>
-        :root {
-            --s7-gold: #d4af37;
-            --s7-gold-dark: #b8960c;
-            --s7-navy: #0a0a1a;
-            --s7-navy-light: #12122a;
-            --s7-text: #e8e8e8;
-            --s7-text-dim: #a0a0a0;
-            --s7-cyan: #00ccff;
-            --s7-cyan-dark: #0099cc;
-            --s7-purple: #8800ff;
-        }
-        
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --gold: #d4af37;
+            --dark-bg: #0a0a1a;
+            --dark-card: #12121f;
+            --dark-border: #2a2a3a;
+            --text-primary: #e8e8e8;
+            --text-secondary: #a0a0a0;
+            --cyan: #00ccff;
+            --cyan-dark: #0099cc;
+        }
         
         body {
             font-family: 'Raleway', sans-serif;
-            background: var(--s7-navy);
-            color: var(--s7-text);
-            line-height: 1.7;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            line-height: 1.6;
             padding-top: 60px;
         }
         
-        /* ══════════════════════════════════════════════════════════════════════
-           UNIVERSAL NAVIGATION
-           ══════════════════════════════════════════════════════════════════════ */
+        /* ===== UNIVERSAL NAVIGATION ===== */
         .s7-nav {
             position: fixed;
-            top: 0; left: 0; right: 0;
+            top: 0;
+            left: 0;
+            right: 0;
             height: 60px;
             background: rgba(10, 10, 26, 0.97);
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0, 204, 255, 0.2);
+            border-bottom: 1px solid rgba(0, 204, 255, 0.3);
             z-index: 9999;
-        }
-        
-        .s7-nav-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            height: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0 20px;
+            padding: 0 30px;
         }
         
         .s7-nav-logo {
@@ -68,483 +101,605 @@
             text-decoration: none;
         }
         
-        .s7-nav-logo-icon {
+        .s7-nav-cube {
             width: 36px;
             height: 36px;
             position: relative;
         }
         
-        .s7-nav-logo-icon::before {
+        .s7-nav-cube::before,
+        .s7-nav-cube::after {
             content: '';
             position: absolute;
-            width: 100%;
-            height: 100%;
-            border: 2px solid var(--s7-gold);
-            transform: rotate(45deg);
-            opacity: 0.5;
+            border: 2px solid var(--gold);
         }
         
-        .s7-nav-logo-icon::after {
-            content: '';
-            position: absolute;
-            width: 55%;
-            height: 55%;
-            top: 22.5%;
-            left: 22.5%;
-            border: 2px solid var(--s7-gold);
-            transform: rotate(45deg);
+        .s7-nav-cube::before {
+            width: 24px;
+            height: 24px;
+            top: 6px;
+            left: 0;
         }
         
-        .s7-nav-logo-text {
+        .s7-nav-cube::after {
+            width: 24px;
+            height: 24px;
+            top: 0;
+            left: 6px;
+            background: rgba(212, 175, 55, 0.1);
+        }
+        
+        .s7-nav-brand {
             font-family: 'Cinzel', serif;
-            font-size: 1rem;
-            color: var(--s7-gold);
+            font-size: 1.1rem;
+            color: var(--gold);
             letter-spacing: 1px;
         }
         
-        .s7-nav-links { display: flex; align-items: center; gap: 5px; }
-        
-        .s7-nav-link {
-            color: var(--s7-text-dim);
-            text-decoration: none;
-            font-size: 0.85rem;
-            padding: 8px 14px;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-        }
-        
-        .s7-nav-link:hover { color: var(--s7-gold); background: rgba(212, 175, 55, 0.1); }
-        .s7-nav-link.active { color: var(--s7-cyan); }
-        
-        .s7-nav-dropdown { position: relative; }
-        
-        .s7-nav-dropdown-btn {
-            color: var(--s7-text-dim);
-            font-size: 0.85rem;
-            padding: 8px 14px;
-            border-radius: 6px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            background: none;
-            border: none;
-            font-family: inherit;
-            transition: all 0.3s ease;
-        }
-        
-        .s7-nav-dropdown-btn:hover { color: var(--s7-gold); background: rgba(212, 175, 55, 0.1); }
-        .s7-nav-dropdown-btn::after { content: '▼'; font-size: 0.55rem; }
-        
-        .s7-nav-dropdown-menu {
-            position: absolute;
-            top: 100%; right: 0;
-            background: var(--s7-navy-light);
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            border-radius: 10px;
-            padding: 8px;
-            min-width: 220px;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(10px);
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-        }
-        
-        .s7-nav-dropdown:hover .s7-nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateY(5px); }
-        
-        .s7-nav-dropdown-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 10px 12px;
-            color: var(--s7-text);
-            text-decoration: none;
-            border-radius: 6px;
-            transition: all 0.2s ease;
-        }
-        
-        .s7-nav-dropdown-item:hover { background: rgba(212, 175, 55, 0.1); color: var(--s7-gold); }
-        
-        .s7-nav-dropdown-icon { font-size: 1.1rem; width: 24px; text-align: center; }
-        .s7-nav-dropdown-text { font-size: 0.85rem; }
-        .s7-nav-dropdown-desc { font-size: 0.7rem; color: var(--s7-text-dim); }
-        
-        .s7-nav-cta {
-            background: linear-gradient(135deg, var(--s7-gold) 0%, var(--s7-gold-dark) 100%);
-            color: #000;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        
-        .s7-nav-cta:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); }
-        
-        .s7-nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 10px; background: none; border: none; }
-        .s7-nav-toggle span { width: 24px; height: 2px; background: var(--s7-gold); }
-        
-        @media (max-width: 900px) {
-            .s7-nav-links {
-                position: fixed; top: 60px; left: 0; right: 0; background: var(--s7-navy);
-                flex-direction: column; padding: 20px; gap: 5px;
-                border-bottom: 1px solid rgba(0, 204, 255, 0.2);
-                transform: translateY(-100%); opacity: 0; visibility: hidden; transition: all 0.3s ease;
-            }
-            .s7-nav-links.active { transform: translateY(0); opacity: 1; visibility: visible; }
-            .s7-nav-toggle { display: flex; }
-            .s7-nav-link, .s7-nav-dropdown-btn { width: 100%; padding: 12px 15px; }
-            .s7-nav-dropdown-menu { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: none; background: rgba(0,0,0,0.2); margin-top: 5px; }
-            .s7-nav-cta { width: 100%; text-align: center; margin-top: 10px; }
-        }
-        
-        /* ══════════════════════════════════════════════════════════════════════
-           PAGE STYLES
-           ══════════════════════════════════════════════════════════════════════ */
-        
-        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
-        @keyframes pulse-cyan { 0%, 100% { text-shadow: 0 0 30px rgba(0, 204, 255, 0.4); } 50% { text-shadow: 0 0 60px rgba(0, 204, 255, 0.8); } }
-        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-        
-        .hero {
-            min-height: 85vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 60px 20px;
-            position: relative;
-            background: radial-gradient(ellipse at center, rgba(0, 204, 255, 0.08) 0%, transparent 60%);
-        }
-        
-        .hero-orb {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background: radial-gradient(circle at 30% 30%, rgba(0, 204, 255, 0.6), transparent 70%);
-            border: 2px solid var(--s7-cyan);
-            margin-bottom: 40px;
-            animation: float 6s ease-in-out infinite;
-            position: relative;
-        }
-        
-        .hero-orb::before {
-            content: '';
-            position: absolute;
-            top: -20px; left: -20px; right: -20px; bottom: -20px;
-            border: 1px solid rgba(0, 204, 255, 0.3);
-            border-radius: 50%;
-            animation: rotate 20s linear infinite;
-        }
-        
-        .hero-title {
-            font-family: 'Cinzel', serif;
-            font-size: 3.5rem;
-            color: var(--s7-cyan);
-            margin-bottom: 15px;
-            animation: pulse-cyan 3s ease-in-out infinite;
-            letter-spacing: 5px;
-        }
-        
-        .hero-subtitle {
-            font-size: 1.3rem;
-            color: var(--s7-gold);
-            margin-bottom: 20px;
-            letter-spacing: 5px;
-        }
-        
-        .hero-desc {
-            font-size: 1.1rem;
-            color: var(--s7-text-dim);
-            max-width: 600px;
-            margin-bottom: 40px;
-        }
-        
-        .cta-button {
-            background: linear-gradient(135deg, var(--s7-cyan) 0%, var(--s7-cyan-dark) 100%);
-            color: #000;
-            padding: 15px 50px;
-            border-radius: 50px;
-            font-size: 1rem;
-            font-weight: 700;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: all 0.3s ease;
-        }
-        
-        .cta-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 40px rgba(0, 204, 255, 0.6);
-        }
-        
-        .section {
-            padding: 80px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        
-        .section-title {
-            font-family: 'Cinzel', serif;
-            text-align: center;
-            font-size: 1.8rem;
-            color: var(--s7-gold);
-            margin-bottom: 40px;
-            letter-spacing: 3px;
-        }
-        
-        .physics-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-        
-        .physics-card {
-            background: rgba(0, 204, 255, 0.05);
-            border: 1px solid rgba(0, 204, 255, 0.2);
-            border-radius: 15px;
-            padding: 30px;
-            transition: all 0.3s ease;
-        }
-        
-        .physics-card:hover {
-            border-color: var(--s7-cyan);
-            transform: translateY(-5px);
-        }
-        
-        .physics-level { color: var(--s7-cyan); font-family: 'Cinzel', serif; font-size: 1.2rem; margin-bottom: 10px; }
-        .physics-title { color: #fff; font-weight: 600; margin-bottom: 10px; }
-        .physics-desc { color: var(--s7-text-dim); font-size: 0.9rem; }
-        
-        .scripture-box {
-            background: rgba(212, 175, 55, 0.05);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            margin-top: 50px;
-        }
-        
-        .scripture-text { color: var(--s7-gold); font-style: italic; font-size: 1.1rem; margin-bottom: 10px; }
-        .scripture-ref { color: var(--s7-text-dim); font-size: 0.9rem; }
-        
-        /* ══════════════════════════════════════════════════════════════════════
-           UNIVERSAL FOOTER
-           ══════════════════════════════════════════════════════════════════════ */
-        .s7-footer {
-            background: linear-gradient(180deg, var(--s7-navy) 0%, #050510 100%);
-            border-top: 1px solid rgba(0, 204, 255, 0.2);
-            padding: 60px 20px 30px;
-        }
-        
-        .s7-footer-container { max-width: 1200px; margin: 0 auto; }
-        
-        .s7-footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 40px;
-            margin-bottom: 50px;
-        }
-        
-        .s7-footer-section h4 {
-            font-family: 'Cinzel', serif;
-            color: var(--s7-gold);
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-            letter-spacing: 2px;
-        }
-        
-        .s7-footer-links { list-style: none; }
-        .s7-footer-links li { margin-bottom: 10px; }
-        
-        .s7-footer-links a {
-            color: var(--s7-text-dim);
-            text-decoration: none;
-            font-size: 0.85rem;
-            transition: color 0.3s ease;
+        .s7-nav-links {
             display: flex;
             align-items: center;
             gap: 8px;
         }
         
-        .s7-footer-links a:hover { color: var(--s7-gold); }
-        .s7-footer-links .icon { font-size: 0.9rem; width: 18px; }
+        .s7-nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
         
-        .s7-footer-bottom {
-            border-top: 1px solid rgba(0, 204, 255, 0.1);
-            padding-top: 30px;
+        .s7-nav-link:hover {
+            color: var(--gold);
+        }
+        
+        .s7-nav-link.active {
+            color: var(--cyan);
+        }
+        
+        .s7-nav-dropdown {
+            position: relative;
+        }
+        
+        .s7-nav-dropdown-content {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: rgba(18, 18, 31, 0.98);
+            border: 1px solid var(--dark-border);
+            border-radius: 8px;
+            padding: 8px 0;
+            min-width: 220px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s;
+        }
+        
+        .s7-nav-dropdown:hover .s7-nav-dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .s7-nav-dropdown-item {
+            display: block;
+            padding: 10px 20px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+        }
+        
+        .s7-nav-dropdown-item:hover {
+            background: rgba(0, 204, 255, 0.1);
+            color: var(--cyan);
+        }
+        
+        .s7-nav-cta {
+            background: linear-gradient(135deg, var(--cyan), var(--cyan-dark));
+            color: #000;
+            padding: 8px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .s7-nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 204, 255, 0.4);
+        }
+        
+        .s7-nav-mobile-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+        
+        .s7-nav-mobile-toggle span {
+            width: 25px;
+            height: 2px;
+            background: var(--cyan);
+            transition: 0.3s;
+        }
+        
+        @media (max-width: 900px) {
+            .s7-nav-links {
+                position: fixed;
+                top: 60px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(10, 10, 26, 0.98);
+                flex-direction: column;
+                justify-content: flex-start;
+                padding-top: 40px;
+                gap: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s;
+            }
+            
+            .s7-nav-links.active {
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .s7-nav-link {
+                padding: 15px 30px;
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid var(--dark-border);
+            }
+            
+            .s7-nav-dropdown-content {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                background: rgba(10, 10, 26, 0.5);
+                border: none;
+                border-radius: 0;
+            }
+            
+            .s7-nav-cta {
+                margin-top: 20px;
+            }
+            
+            .s7-nav-mobile-toggle {
+                display: flex;
+            }
+        }
+        
+        /* ===== HERO SECTION ===== */
+        .hero {
+            min-height: calc(100vh - 60px);
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 12px;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            background: radial-gradient(ellipse at center, rgba(0, 204, 255, 0.1) 0%, transparent 70%);
         }
         
-        .s7-footer-formula { font-family: 'Cinzel', serif; font-size: 1.4rem; color: var(--s7-gold); }
-        .s7-footer-tagline { color: var(--s7-text-dim); font-size: 0.8rem; letter-spacing: 3px; text-transform: uppercase; }
-        .s7-footer-copy { color: rgba(255,255,255,0.3); font-size: 0.75rem; }
-        .s7-footer-copy a { color: rgba(212, 175, 55, 0.5); text-decoration: none; }
+        .hero-orb {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, var(--cyan), transparent 70%);
+            box-shadow: 0 0 100px var(--cyan), inset 0 0 60px rgba(0, 204, 255, 0.3);
+            margin-bottom: 40px;
+            animation: pulse 4s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        
+        .hero-title {
+            font-family: 'Cinzel', serif;
+            font-size: 3rem;
+            color: var(--cyan);
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 50px;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .btn {
+            padding: 15px 40px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--cyan), var(--cyan-dark));
+            color: #000;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 204, 255, 0.4);
+        }
+        
+        .btn-secondary {
+            border: 1px solid var(--cyan);
+            color: var(--cyan);
+            background: transparent;
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(0, 204, 255, 0.1);
+        }
+        
+        /* ===== SECTIONS ===== */
+        section {
+            padding: 100px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 15px;
+            color: var(--cyan);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 60px;
+            font-size: 1.1rem;
+        }
+        
+        /* ===== SPECTRUM ===== */
+        .spectrum-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        
+        .spectrum-row {
+            display: grid;
+            grid-template-columns: 80px 200px 1fr 150px;
+            align-items: center;
+            padding: 20px;
+            background: var(--dark-card);
+            gap: 20px;
+        }
+        
+        .spectrum-level {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .spectrum-level.c1 { color: #ff4444; }
+        .spectrum-level.c2 { color: #ff8800; }
+        .spectrum-level.c3 { color: #ffff00; }
+        .spectrum-level.c4 { color: #00ff88; }
+        .spectrum-level.c5 { color: #00ccff; }
+        .spectrum-level.c6 { color: #8800ff; }
+        .spectrum-level.c7 { color: var(--gold); }
+        
+        .spectrum-name {
+            font-family: 'Cinzel', serif;
+            color: var(--text-primary);
+        }
+        
+        .spectrum-desc {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .spectrum-status {
+            text-align: right;
+            font-family: 'Orbitron', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+        }
+        
+        .spectrum-status.given { color: #ff4444; }
+        .spectrum-status.flexible { color: #ffff00; }
+        .spectrum-status.negotiable { color: #00ff88; }
+        
+        /* ===== TRANSITION POINT ===== */
+        .transition-section {
+            background: linear-gradient(135deg, rgba(0, 204, 255, 0.1), rgba(136, 0, 255, 0.1));
+            border: 1px solid var(--cyan);
+            border-radius: 12px;
+            padding: 60px;
+            text-align: center;
+        }
+        
+        .transition-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.5rem;
+            color: var(--cyan);
+            margin-bottom: 20px;
+        }
+        
+        .transition-desc {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        /* ===== FOOTER ===== */
+        .s7-footer {
+            background: linear-gradient(180deg, #0a0a1a 0%, #050510 100%);
+            border-top: 1px solid rgba(0, 204, 255, 0.3);
+            padding: 60px 20px 30px;
+        }
+        
+        .s7-footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .s7-footer-col h4 {
+            font-family: 'Cinzel', serif;
+            color: var(--gold);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        
+        .s7-footer-col a {
+            display: block;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            padding: 6px 0;
+            transition: color 0.3s;
+        }
+        
+        .s7-footer-col a:hover {
+            color: var(--gold);
+        }
+        
+        .s7-footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid var(--dark-border);
+        }
+        
+        .s7-footer-formula {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.4rem;
+            color: var(--gold);
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+            margin-bottom: 10px;
+        }
+        
+        .s7-footer-tagline {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+        
+        .s7-footer-copy {
+            color: var(--text-secondary);
+            font-size: 0.75rem;
+        }
         
         @media (max-width: 768px) {
-            .hero-title { font-size: 2.2rem; }
-            .hero-orb { width: 100px; height: 100px; }
-            .s7-footer-grid { grid-template-columns: 1fr 1fr; }
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-orb {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .spectrum-row {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .spectrum-status {
+                text-align: center;
+            }
+            
+            .s7-footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .transition-section {
+                padding: 40px 20px;
+            }
         }
     </style>
 </head>
 <body>
-
-<!-- NAVIGATION -->
-<nav class="s7-nav">
-    <div class="s7-nav-container">
+    <!-- Navigation -->
+    <nav class="s7-nav">
         <a href="https://sevencubedseven.com" class="s7-nav-logo">
-            <div class="s7-nav-logo-icon"></div>
-            <span class="s7-nav-logo-text">7³×7 LABS</span>
+            <div class="s7-nav-cube"></div>
+            <span class="s7-nav-brand">7³×7 LABS</span>
         </a>
         
-        <button class="s7-nav-toggle" onclick="document.querySelector('.s7-nav-links').classList.toggle('active')">
-            <span></span><span></span><span></span>
-        </button>
-        
-        <div class="s7-nav-links">
+        <div class="s7-nav-links" id="navLinks">
             <a href="https://144000.ai" class="s7-nav-link">144,000</a>
             <a href="https://2401.is" class="s7-nav-link">Mathematics</a>
             <a href="https://divineinsurgent.live" class="s7-nav-link">Insurgent</a>
             
             <div class="s7-nav-dropdown">
-                <button class="s7-nav-dropdown-btn">Tools</button>
-                <div class="s7-nav-dropdown-menu">
-                    <a href="https://144000.ai/assessment.html" class="s7-nav-dropdown-item">
-                        <span class="s7-nav-dropdown-icon">✨</span>
-                        <div><div class="s7-nav-dropdown-text">144,000 Assessment</div><div class="s7-nav-dropdown-desc">Discover your calling</div></div>
-                    </a>
-                    <a href="https://2401.is/calculator.html" class="s7-nav-dropdown-item">
-                        <span class="s7-nav-dropdown-icon">⚡</span>
-                        <div><div class="s7-nav-dropdown-text">C⁷ Calculator</div><div class="s7-nav-dropdown-desc">Your consciousness level</div></div>
-                    </a>
-                    <a href="https://2401.is/probability.html" class="s7-nav-dropdown-item">
-                        <span class="s7-nav-dropdown-icon">📊</span>
-                        <div><div class="s7-nav-dropdown-text">Probability Cascade</div><div class="s7-nav-dropdown-desc">Watch impossibility unfold</div></div>
-                    </a>
-                    <a href="https://divineinsurgent.live/mission.html" class="s7-nav-dropdown-item">
-                        <span class="s7-nav-dropdown-icon">⚔️</span>
-                        <div><div class="s7-nav-dropdown-text">Daily Mission</div><div class="s7-nav-dropdown-desc">Your tactical briefing</div></div>
-                    </a>
-                    <a href="https://sevencubedseven.com/books.html" class="s7-nav-dropdown-item">
-                        <span class="s7-nav-dropdown-icon">📚</span>
-                        <div><div class="s7-nav-dropdown-text">Book Finder</div><div class="s7-nav-dropdown-desc">Personalized recommendations</div></div>
-                    </a>
+                <span class="s7-nav-link" style="cursor: pointer;">Tools ▾</span>
+                <div class="s7-nav-dropdown-content">
+                    <a href="https://144000.ai/assessment.html" class="s7-nav-dropdown-item">✨ 144,000 Assessment</a>
+                    <a href="https://2401.is/calculator.html" class="s7-nav-dropdown-item">⚡ C⁷ Calculator</a>
+                    <a href="https://2401.is/probability.html" class="s7-nav-dropdown-item">📊 Probability Cascade</a>
+                    <a href="https://divineinsurgent.live/mission.html" class="s7-nav-dropdown-item">⚔️ Daily Mission</a>
+                    <a href="https://sevencubedseven.com/books.html" class="s7-nav-dropdown-item">📚 Book Finder</a>
                 </div>
             </div>
             
-            <a href="https://www.amazon.com/s?k=julio+c.+medina" target="_blank" class="s7-nav-cta">📚 All Books</a>
+            <a href="https://www.amazon.com/s?k=julio+c.+medina" class="s7-nav-cta" target="_blank">📚 All Books</a>
         </div>
-    </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-orb"></div>
-    <h1 class="hero-title">REALITY NEGOTIABLE</h1>
-    <p class="hero-subtitle">Consciousness Physics</p>
-    <p class="hero-desc">
-        At higher consciousness levels, reality becomes increasingly malleable. 
-        The 144,000 will navigate the final crisis through physics most don't know exists.
-    </p>
-    <a href="https://www.amazon.com/s?k=julio+c.+medina" target="_blank" class="cta-button">Explore the Physics</a>
-</section>
-
-<!-- LEVELS -->
-<section class="section">
-    <h2 class="section-title">THE CONSCIOUSNESS SPECTRUM</h2>
+        
+        <div class="s7-nav-mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
     
-    <div class="physics-grid">
-        <div class="physics-card">
-            <div class="physics-level">C¹ - C²</div>
-            <h3 class="physics-title">Physical & Energy</h3>
-            <p class="physics-desc">Matter appears solid. Rules feel absolute. Reality is "given" - something that happens TO you.</p>
-        </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-orb"></div>
+        <h1 class="hero-title">REALITY NEGOTIABLE</h1>
+        <p class="hero-subtitle">At C¹, reality is given. At C⁷, reality is negotiable. The consciousness spectrum determines what you can affect.</p>
         
-        <div class="physics-card">
-            <div class="physics-level">C³ - C⁴</div>
-            <h3 class="physics-title">Space-Time & Entanglement</h3>
-            <p class="physics-desc">Time becomes fluid. Distance becomes irrelevant. Reality is "cooperative" - something you work WITH.</p>
+        <div class="hero-cta">
+            <a href="https://2401.is/calculator.html" class="btn btn-primary">Calculate Your C-Level</a>
+            <a href="https://2401.is/probability.html" class="btn btn-secondary">See the Math</a>
         </div>
-        
-        <div class="physics-card">
-            <div class="physics-level">C⁵ - C⁶</div>
-            <h3 class="physics-title">Information & Law</h3>
-            <p class="physics-desc">Patterns reveal themselves. Universal laws become visible. Reality is "responsive" - something that responds TO you.</p>
-        </div>
-        
-        <div class="physics-card">
-            <div class="physics-level">C⁷</div>
-            <h3 class="physics-title">Pure Consciousness</h3>
-            <p class="physics-desc">Unity with Source. Divine partnership. Reality is "negotiable" - something you co-create WITH the Divine.</p>
-        </div>
-    </div>
+    </section>
     
-    <div class="scripture-box">
-        <p class="scripture-text">"And be not conformed to this world: but be ye transformed by the renewing of your mind."</p>
-        <p class="scripture-ref">— Romans 12:2</p>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="s7-footer">
-    <div class="s7-footer-container">
+    <!-- Spectrum Section -->
+    <section>
+        <h2 class="section-title">THE CONSCIOUSNESS SPECTRUM</h2>
+        <p class="section-subtitle">Seven levels from physical to unity. Reality's negotiability increases with consciousness.</p>
+        
+        <div class="spectrum-container">
+            <div class="spectrum-row">
+                <div class="spectrum-level c1">C¹</div>
+                <div class="spectrum-name">Physical</div>
+                <div class="spectrum-desc">Matter, body, survival. Subject to physical laws.</div>
+                <div class="spectrum-status given">REALITY GIVEN</div>
+            </div>
+            
+            <div class="spectrum-row">
+                <div class="spectrum-level c2">C²</div>
+                <div class="spectrum-name">Energy</div>
+                <div class="spectrum-desc">Emotions, vitality, life force. Subject to energetic patterns.</div>
+                <div class="spectrum-status given">REALITY GIVEN</div>
+            </div>
+            
+            <div class="spectrum-row">
+                <div class="spectrum-level c3">C³</div>
+                <div class="spectrum-name">Space-Time</div>
+                <div class="spectrum-desc">Authority, decision, power. Beginning to influence reality.</div>
+                <div class="spectrum-status flexible">BECOMING FLEXIBLE</div>
+            </div>
+            
+            <div class="spectrum-row">
+                <div class="spectrum-level c4">C⁴</div>
+                <div class="spectrum-name">Entanglement</div>
+                <div class="spectrum-desc">Love, connection, relationships. Non-local influence.</div>
+                <div class="spectrum-status flexible">BECOMING FLEXIBLE</div>
+            </div>
+            
+            <div class="spectrum-row">
+                <div class="spectrum-level c5">C⁵</div>
+                <div class="spectrum-name">Information</div>
+                <div class="spectrum-desc">Truth, creativity, expression. Reality responds to intention.</div>
+                <div class="spectrum-status negotiable">REALITY NEGOTIABLE</div>
+            </div>
+            
+            <div class="spectrum-row">
+                <div class="spectrum-level c6">C⁶</div>
+                <div class="spectrum-name">Law</div>
+                <div class="spectrum-desc">Wisdom, principle, vision. Operating above circumstance.</div>
+                <div class="spectrum-status negotiable">REALITY NEGOTIABLE</div>
+            </div>
+            
+            <div class="spectrum-row">
+                <div class="spectrum-level c7">C⁷</div>
+                <div class="spectrum-name">Unity</div>
+                <div class="spectrum-desc">Divine partnership, full consciousness. Co-creating reality.</div>
+                <div class="spectrum-status negotiable">REALITY NEGOTIABLE</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Transition Section -->
+    <section>
+        <div class="transition-section">
+            <div class="transition-title">THE C⁵ THRESHOLD</div>
+            <p class="transition-desc">At C⁵ and above, consciousness begins to directly influence physical reality. Intention shapes circumstance. Observation affects outcome. Prayer becomes physics. This is where the 144,000 operate.</p>
+            <a href="https://2401.is/calculator.html" class="btn btn-primary">Discover Your Level</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="s7-footer">
         <div class="s7-footer-grid">
-            <div class="s7-footer-section">
+            <div class="s7-footer-col">
                 <h4>PORTALS</h4>
-                <ul class="s7-footer-links">
-                    <li><a href="https://sevencubedseven.com"><span class="icon">🏠</span> Main Hub</a></li>
-                    <li><a href="https://144000.ai"><span class="icon">✨</span> 144,000 Portal</a></li>
-                    <li><a href="https://2401.is"><span class="icon">🔢</span> Mathematics</a></li>
-                    <li><a href="https://divineinsurgent.live"><span class="icon">⚔️</span> Divine Insurgent</a></li>
-                    <li><a href="https://realitynegotiable.is"><span class="icon">🧠</span> Reality Physics</a></li>
-                    <li><a href="https://c343.io"><span class="icon">📜</span> Licensing</a></li>
-                </ul>
+                <a href="https://sevencubedseven.com">🏠 Main Hub</a>
+                <a href="https://144000.ai">✨ 144,000 Portal</a>
+                <a href="https://2401.is">📐 Mathematics</a>
+                <a href="https://divineinsurgent.live">⚔️ Divine Insurgent</a>
+                <a href="https://realitynegotiable.is">🌀 Reality Negotiable</a>
+                <a href="https://c343.io">🏢 Enterprise</a>
             </div>
             
-            <div class="s7-footer-section">
+            <div class="s7-footer-col">
                 <h4>TOOLS</h4>
-                <ul class="s7-footer-links">
-                    <li><a href="https://144000.ai/assessment.html"><span class="icon">✨</span> Assessment</a></li>
-                    <li><a href="https://2401.is/calculator.html"><span class="icon">⚡</span> Calculator</a></li>
-                    <li><a href="https://2401.is/probability.html"><span class="icon">📊</span> Probability</a></li>
-                    <li><a href="https://divineinsurgent.live/mission.html"><span class="icon">⚔️</span> Daily Mission</a></li>
-                    <li><a href="https://sevencubedseven.com/books.html"><span class="icon">📚</span> Book Finder</a></li>
-                </ul>
+                <a href="https://144000.ai/assessment.html">✨ 144,000 Assessment</a>
+                <a href="https://2401.is/calculator.html">⚡ C⁷ Calculator</a>
+                <a href="https://2401.is/probability.html">📊 Probability Cascade</a>
+                <a href="https://divineinsurgent.live/mission.html">⚔️ Daily Mission</a>
+                <a href="https://sevencubedseven.com/books.html">📚 Book Finder</a>
             </div>
             
-            <div class="s7-footer-section">
+            <div class="s7-footer-col">
                 <h4>RESOURCES</h4>
-                <ul class="s7-footer-links">
-                    <li><a href="https://www.amazon.com/s?k=julio+c.+medina" target="_blank"><span class="icon">📚</span> All 33+ Books</a></li>
-                    <li><a href="https://twitter.com/7Cubed7" target="_blank"><span class="icon">𝕏</span> @7Cubed7</a></li>
-                    <li><a href="mailto:7cubed7@proton.me"><span class="icon">✉️</span> Contact</a></li>
-                </ul>
+                <a href="https://www.amazon.com/s?k=julio+c.+medina" target="_blank">📖 All Books on Amazon</a>
+                <a href="https://twitter.com/7Cubed7" target="_blank">𝕏 @7Cubed7</a>
+                <a href="mailto:7cubed7@proton.me">✉️ Contact</a>
             </div>
             
-            <div class="s7-footer-section">
+            <div class="s7-footer-col">
                 <h4>CONNECT</h4>
-                <ul class="s7-footer-links">
-                    <li><a href="mailto:7cubed7@proton.me">7cubed7@proton.me</a></li>
-                    <li><a href="mailto:ConsciousCodeLabs@proton.me">Business</a></li>
-                    <li><a href="mailto:hello@c343.io">Licensing</a></li>
-                </ul>
+                <a href="mailto:7cubed7@proton.me">7cubed7@proton.me</a>
+                <a href="mailto:ConsciousCodeLabs@proton.me">ConsciousCodeLabs@proton.me</a>
+                <a href="mailto:hello@c343.io">hello@c343.io</a>
             </div>
         </div>
         
         <div class="s7-footer-bottom">
             <div class="s7-footer-formula">7³ × 7 = 2,401</div>
-            <div class="s7-footer-tagline">Consciousness Architecture</div>
-            <div class="s7-footer-copy">© 2025 <a href="https://sevencubedseven.com">Seven Cubed Seven Labs LLC</a>. All rights reserved.</div>
+            <div class="s7-footer-tagline">CONSCIOUSNESS ARCHITECTURE</div>
+            <div class="s7-footer-copy">© 2025 Seven Cubed Seven Labs LLC. All rights reserved.</div>
         </div>
-    </div>
-</footer>
-
+    </footer>
 </body>
 </html>
