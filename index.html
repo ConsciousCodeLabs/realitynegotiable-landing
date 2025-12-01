@@ -3,48 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE 7³ REALITY | Is Reality Negotiable?</title>
-    <meta name="description" content="What if reality isn't fixed? What if consciousness creates matter? What if the universe is a thought? Discover the mathematics that prove reality is negotiable.">
-    <meta name="keywords" content="consciousness physics, reality negotiable, quantum mechanics, 7 cubed, matrix, simulation theory, 2401">
+    <title>Reality Negotiable | Consciousness Physics | Seven Cubed Seven Labs</title>
+    <meta name="description" content="At C⁷ consciousness, reality becomes negotiable. Discover the physics of consciousness and how the 144,000 will navigate the final crisis.">
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="THE 7³ REALITY | Is Reality Negotiable?">
-    <meta property="og:description" content="The consciousness physics framework that changes everything you thought you knew about reality.">
-    <meta property="og:type" content="book">
+    <meta property="og:title" content="Reality Negotiable | Consciousness Physics">
+    <meta property="og:description" content="The physics of how consciousness shapes reality at higher dimensions.">
     <meta property="og:url" content="https://realitynegotiable.is">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@7Cubed7">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <style>
+        :root {
+            --s7-gold: #d4af37;
+            --s7-gold-dark: #b8960c;
+            --s7-navy: #0a0a1a;
+            --s7-navy-light: #12122a;
+            --s7-text: #e8e8e8;
+            --s7-text-dim: #a0a0a0;
+            --s7-cyan: #00ccff;
+            --s7-cyan-dark: #0099cc;
+            --s7-purple: #8800ff;
+        }
+        
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: 'Raleway', sans-serif;
-            background: #050510;
-            color: #e8e8e8;
-            line-height: 1.8;
-            overflow-x: hidden;
+            background: var(--s7-navy);
+            color: var(--s7-text);
+            line-height: 1.7;
+            padding-top: 60px;
         }
         
-        /* Animated Matrix Background */
-        .matrix-bg {
+        /* ══════════════════════════════════════════════════════════════════════
+           UNIVERSAL NAVIGATION
+           ══════════════════════════════════════════════════════════════════════ */
+        .s7-nav {
             position: fixed;
-            top: 0;
-            left: 0;
+            top: 0; left: 0; right: 0;
+            height: 60px;
+            background: rgba(10, 10, 26, 0.97);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 204, 255, 0.2);
+            z-index: 9999;
+        }
+        
+        .s7-nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        
+        .s7-nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        
+        .s7-nav-logo-icon {
+            width: 36px;
+            height: 36px;
+            position: relative;
+        }
+        
+        .s7-nav-logo-icon::before {
+            content: '';
+            position: absolute;
             width: 100%;
             height: 100%;
-            pointer-events: none;
-            z-index: 0;
-            background: 
-                radial-gradient(ellipse at 20% 30%, rgba(0, 255, 136, 0.05) 0%, transparent 50%),
-                radial-gradient(ellipse at 80% 70%, rgba(138, 43, 226, 0.05) 0%, transparent 50%);
+            border: 2px solid var(--s7-gold);
+            transform: rotate(45deg);
+            opacity: 0.5;
         }
         
-        /* Hero */
+        .s7-nav-logo-icon::after {
+            content: '';
+            position: absolute;
+            width: 55%;
+            height: 55%;
+            top: 22.5%;
+            left: 22.5%;
+            border: 2px solid var(--s7-gold);
+            transform: rotate(45deg);
+        }
+        
+        .s7-nav-logo-text {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            color: var(--s7-gold);
+            letter-spacing: 1px;
+        }
+        
+        .s7-nav-links { display: flex; align-items: center; gap: 5px; }
+        
+        .s7-nav-link {
+            color: var(--s7-text-dim);
+            text-decoration: none;
+            font-size: 0.85rem;
+            padding: 8px 14px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        
+        .s7-nav-link:hover { color: var(--s7-gold); background: rgba(212, 175, 55, 0.1); }
+        .s7-nav-link.active { color: var(--s7-cyan); }
+        
+        .s7-nav-dropdown { position: relative; }
+        
+        .s7-nav-dropdown-btn {
+            color: var(--s7-text-dim);
+            font-size: 0.85rem;
+            padding: 8px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: none;
+            border: none;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        .s7-nav-dropdown-btn:hover { color: var(--s7-gold); background: rgba(212, 175, 55, 0.1); }
+        .s7-nav-dropdown-btn::after { content: '▼'; font-size: 0.55rem; }
+        
+        .s7-nav-dropdown-menu {
+            position: absolute;
+            top: 100%; right: 0;
+            background: var(--s7-navy-light);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 10px;
+            padding: 8px;
+            min-width: 220px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+        
+        .s7-nav-dropdown:hover .s7-nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateY(5px); }
+        
+        .s7-nav-dropdown-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 12px;
+            color: var(--s7-text);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+        
+        .s7-nav-dropdown-item:hover { background: rgba(212, 175, 55, 0.1); color: var(--s7-gold); }
+        
+        .s7-nav-dropdown-icon { font-size: 1.1rem; width: 24px; text-align: center; }
+        .s7-nav-dropdown-text { font-size: 0.85rem; }
+        .s7-nav-dropdown-desc { font-size: 0.7rem; color: var(--s7-text-dim); }
+        
+        .s7-nav-cta {
+            background: linear-gradient(135deg, var(--s7-gold) 0%, var(--s7-gold-dark) 100%);
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .s7-nav-cta:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); }
+        
+        .s7-nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 10px; background: none; border: none; }
+        .s7-nav-toggle span { width: 24px; height: 2px; background: var(--s7-gold); }
+        
+        @media (max-width: 900px) {
+            .s7-nav-links {
+                position: fixed; top: 60px; left: 0; right: 0; background: var(--s7-navy);
+                flex-direction: column; padding: 20px; gap: 5px;
+                border-bottom: 1px solid rgba(0, 204, 255, 0.2);
+                transform: translateY(-100%); opacity: 0; visibility: hidden; transition: all 0.3s ease;
+            }
+            .s7-nav-links.active { transform: translateY(0); opacity: 1; visibility: visible; }
+            .s7-nav-toggle { display: flex; }
+            .s7-nav-link, .s7-nav-dropdown-btn { width: 100%; padding: 12px 15px; }
+            .s7-nav-dropdown-menu { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: none; background: rgba(0,0,0,0.2); margin-top: 5px; }
+            .s7-nav-cta { width: 100%; text-align: center; margin-top: 10px; }
+        }
+        
+        /* ══════════════════════════════════════════════════════════════════════
+           PAGE STYLES
+           ══════════════════════════════════════════════════════════════════════ */
+        
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+        @keyframes pulse-cyan { 0%, 100% { text-shadow: 0 0 30px rgba(0, 204, 255, 0.4); } 50% { text-shadow: 0 0 60px rgba(0, 204, 255, 0.8); } }
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        
         .hero {
-            min-height: 100vh;
+            min-height: 85vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -52,631 +217,334 @@
             text-align: center;
             padding: 60px 20px;
             position: relative;
-            z-index: 1;
-            background: linear-gradient(180deg, rgba(0, 255, 136, 0.08) 0%, rgba(5, 5, 16, 1) 100%);
+            background: radial-gradient(ellipse at center, rgba(0, 204, 255, 0.08) 0%, transparent 60%);
         }
         
-        .glitch-text {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.9rem;
-            color: #00ff88;
-            letter-spacing: 4px;
-            margin-bottom: 30px;
-            text-transform: uppercase;
+        .hero-orb {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, rgba(0, 204, 255, 0.6), transparent 70%);
+            border: 2px solid var(--s7-cyan);
+            margin-bottom: 40px;
+            animation: float 6s ease-in-out infinite;
+            position: relative;
+        }
+        
+        .hero-orb::before {
+            content: '';
+            position: absolute;
+            top: -20px; left: -20px; right: -20px; bottom: -20px;
+            border: 1px solid rgba(0, 204, 255, 0.3);
+            border-radius: 50%;
+            animation: rotate 20s linear infinite;
         }
         
         .hero-title {
             font-family: 'Cinzel', serif;
-            font-size: 4rem;
-            color: #00ff88;
-            margin-bottom: 10px;
-            text-shadow: 0 0 60px rgba(0, 255, 136, 0.5);
+            font-size: 3.5rem;
+            color: var(--s7-cyan);
+            margin-bottom: 15px;
+            animation: pulse-cyan 3s ease-in-out infinite;
             letter-spacing: 5px;
         }
         
-        .hero-title sup {
-            font-size: 2rem;
-            vertical-align: super;
-        }
-        
         .hero-subtitle {
-            font-family: 'Cinzel', serif;
-            font-size: 1.8rem;
-            color: #e8e8e8;
-            margin-bottom: 50px;
-            letter-spacing: 6px;
-            font-weight: 400;
+            font-size: 1.3rem;
+            color: var(--s7-gold);
+            margin-bottom: 20px;
+            letter-spacing: 5px;
         }
         
-        .hero-question {
-            font-size: 2.5rem;
-            color: #ffffff;
-            max-width: 700px;
-            margin-bottom: 30px;
-            font-weight: 300;
-            line-height: 1.4;
-        }
-        
-        .hero-question span {
-            color: #00ff88;
-            font-weight: 600;
-        }
-        
-        .hero-answer {
+        .hero-desc {
             font-size: 1.1rem;
-            color: #a0a0a0;
-            max-width: 650px;
-            margin-bottom: 50px;
+            color: var(--s7-text-dim);
+            max-width: 600px;
+            margin-bottom: 40px;
         }
         
         .cta-button {
-            background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%);
+            background: linear-gradient(135deg, var(--s7-cyan) 0%, var(--s7-cyan-dark) 100%);
             color: #000;
-            padding: 20px 50px;
-            text-decoration: none;
-            font-weight: 700;
-            border-radius: 4px;
-            transition: all 0.3s;
-            text-transform: uppercase;
-            letter-spacing: 3px;
+            padding: 15px 50px;
+            border-radius: 50px;
             font-size: 1rem;
-            display: inline-block;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
         }
         
         .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 50px rgba(0, 255, 136, 0.4);
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(0, 204, 255, 0.6);
         }
         
-        .cta-secondary {
-            display: block;
-            margin-top: 20px;
-            color: #a0a0a0;
-            font-size: 0.9rem;
-        }
-        
-        /* Red Pill Section */
-        .pill-section {
-            padding: 100px 40px;
-            max-width: 900px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-            text-align: center;
-        }
-        
-        .section-title {
-            font-family: 'Cinzel', serif;
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #00ff88;
-        }
-        
-        .section-subtitle {
-            color: #a0a0a0;
-            margin-bottom: 60px;
-            font-size: 1.05rem;
-        }
-        
-        .pill-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-        }
-        
-        @media (max-width: 768px) {
-            .pill-grid { grid-template-columns: 1fr; }
-            .hero-title { font-size: 2.5rem; }
-            .hero-question { font-size: 1.8rem; }
-            .hero-subtitle { font-size: 1.2rem; }
-        }
-        
-        .pill-card {
-            padding: 40px 30px;
-            border-radius: 8px;
-            text-align: left;
-        }
-        
-        .pill-card.blue {
-            background: rgba(30, 144, 255, 0.1);
-            border: 1px solid rgba(30, 144, 255, 0.3);
-        }
-        
-        .pill-card.green {
-            background: rgba(0, 255, 136, 0.1);
-            border: 1px solid rgba(0, 255, 136, 0.3);
-        }
-        
-        .pill-card h3 {
-            font-family: 'Cinzel', serif;
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-        }
-        
-        .pill-card.blue h3 { color: #1e90ff; }
-        .pill-card.green h3 { color: #00ff88; }
-        
-        .pill-card ul {
-            list-style: none;
-        }
-        
-        .pill-card li {
-            margin-bottom: 12px;
-            padding-left: 25px;
-            position: relative;
-            color: #c0c0c0;
-            font-size: 0.95rem;
-        }
-        
-        .pill-card.blue li::before {
-            content: "×";
-            position: absolute;
-            left: 0;
-            color: #1e90ff;
-        }
-        
-        .pill-card.green li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #00ff88;
-        }
-        
-        /* Proof Section */
-        .proof-section {
-            background: #0a0a15;
-            padding: 100px 40px;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .proof-section .section-title {
-            text-align: center;
-        }
-        
-        .proof-section .section-subtitle {
-            text-align: center;
-        }
-        
-        .proof-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-        
-        .proof-card {
-            background: #111120;
-            border: 1px solid #222235;
-            padding: 30px;
-            border-radius: 8px;
-            transition: all 0.3s;
-        }
-        
-        .proof-card:hover {
-            border-color: #00ff88;
-            transform: translateY(-5px);
-        }
-        
-        .proof-card h4 {
-            color: #00ff88;
-            margin-bottom: 15px;
-            font-size: 1rem;
-            font-weight: 600;
-        }
-        
-        .proof-card p {
-            color: #a0a0a0;
-            font-size: 0.9rem;
-            line-height: 1.6;
-        }
-        
-        /* Quote Section */
-        .quote-section {
-            background: linear-gradient(135deg, #0d0d20 0%, #1a0a2e 100%);
-            padding: 100px 40px;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .quote-section blockquote {
-            font-family: 'Cinzel', serif;
-            font-size: 1.8rem;
-            color: white;
-            max-width: 850px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-        
-        .quote-section blockquote span {
-            color: #00ff88;
-        }
-        
-        .quote-author {
-            margin-top: 30px;
-            color: #a0a0a0;
-            font-size: 1rem;
-        }
-        
-        @media (max-width: 768px) {
-            .quote-section blockquote { font-size: 1.3rem; }
-        }
-        
-        /* Dimensions Section */
-        .dimensions-section {
-            padding: 100px 40px;
-            max-width: 900px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .dimension-item {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-            margin-bottom: 25px;
-            padding: 20px;
-            background: rgba(0, 255, 136, 0.03);
-            border-left: 3px solid #00ff88;
-        }
-        
-        .dimension-level {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 1.5rem;
-            color: #00ff88;
-            min-width: 50px;
-        }
-        
-        .dimension-info h4 {
-            color: #e8e8e8;
-            margin-bottom: 5px;
-            font-size: 1rem;
-        }
-        
-        .dimension-info p {
-            color: #808080;
-            font-size: 0.85rem;
-        }
-        
-        /* Who Section */
-        .who-section {
-            background: #0a0a15;
-            padding: 100px 40px;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .who-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+        .section {
+            padding: 80px 20px;
             max-width: 1000px;
             margin: 0 auto;
         }
         
-        .who-card {
-            background: #111120;
-            border: 1px solid #222235;
-            padding: 25px;
-            border-radius: 8px;
-            text-align: center;
-        }
-        
-        .who-card .icon {
-            font-size: 2rem;
-            margin-bottom: 15px;
-        }
-        
-        .who-card h4 {
-            color: #00ff88;
-            margin-bottom: 10px;
-            font-size: 1rem;
-        }
-        
-        .who-card p {
-            color: #a0a0a0;
-            font-size: 0.85rem;
-        }
-        
-        /* CTA Section */
-        .cta-section {
-            padding: 100px 40px;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-            background: linear-gradient(180deg, #050510 0%, rgba(0, 255, 136, 0.1) 100%);
-        }
-        
-        .cta-section h2 {
+        .section-title {
             font-family: 'Cinzel', serif;
-            font-size: 2.5rem;
-            color: #00ff88;
-            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.8rem;
+            color: var(--s7-gold);
+            margin-bottom: 40px;
+            letter-spacing: 3px;
         }
+        
+        .physics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .physics-card {
+            background: rgba(0, 204, 255, 0.05);
+            border: 1px solid rgba(0, 204, 255, 0.2);
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .physics-card:hover {
+            border-color: var(--s7-cyan);
+            transform: translateY(-5px);
+        }
+        
+        .physics-level { color: var(--s7-cyan); font-family: 'Cinzel', serif; font-size: 1.2rem; margin-bottom: 10px; }
+        .physics-title { color: #fff; font-weight: 600; margin-bottom: 10px; }
+        .physics-desc { color: var(--s7-text-dim); font-size: 0.9rem; }
+        
+        .scripture-box {
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .scripture-text { color: var(--s7-gold); font-style: italic; font-size: 1.1rem; margin-bottom: 10px; }
+        .scripture-ref { color: var(--s7-text-dim); font-size: 0.9rem; }
+        
+        /* ══════════════════════════════════════════════════════════════════════
+           UNIVERSAL FOOTER
+           ══════════════════════════════════════════════════════════════════════ */
+        .s7-footer {
+            background: linear-gradient(180deg, var(--s7-navy) 0%, #050510 100%);
+            border-top: 1px solid rgba(0, 204, 255, 0.2);
+            padding: 60px 20px 30px;
+        }
+        
+        .s7-footer-container { max-width: 1200px; margin: 0 auto; }
+        
+        .s7-footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .s7-footer-section h4 {
+            font-family: 'Cinzel', serif;
+            color: var(--s7-gold);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        
+        .s7-footer-links { list-style: none; }
+        .s7-footer-links li { margin-bottom: 10px; }
+        
+        .s7-footer-links a {
+            color: var(--s7-text-dim);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .s7-footer-links a:hover { color: var(--s7-gold); }
+        .s7-footer-links .icon { font-size: 0.9rem; width: 18px; }
+        
+        .s7-footer-bottom {
+            border-top: 1px solid rgba(0, 204, 255, 0.1);
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .s7-footer-formula { font-family: 'Cinzel', serif; font-size: 1.4rem; color: var(--s7-gold); }
+        .s7-footer-tagline { color: var(--s7-text-dim); font-size: 0.8rem; letter-spacing: 3px; text-transform: uppercase; }
+        .s7-footer-copy { color: rgba(255,255,255,0.3); font-size: 0.75rem; }
+        .s7-footer-copy a { color: rgba(212, 175, 55, 0.5); text-decoration: none; }
         
         @media (max-width: 768px) {
-            .cta-section h2 { font-size: 1.8rem; }
-        }
-        
-        .cta-section p {
-            color: #a0a0a0;
-            max-width: 600px;
-            margin: 0 auto 40px;
-            font-size: 1.1rem;
-        }
-        
-        .price-badge {
-            display: inline-block;
-            background: rgba(0, 255, 136, 0.1);
-            border: 1px solid #00ff88;
-            padding: 10px 30px;
-            margin-bottom: 30px;
-            color: #00ff88;
-            font-size: 1.3rem;
-            font-weight: 600;
-        }
-        
-        /* Footer */
-        footer {
-            border-top: 1px solid #222235;
-            padding: 60px 40px;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .footer-logo {
-            font-family: 'Cinzel', serif;
-            font-size: 1.3rem;
-            color: #00ff88;
-            margin-bottom: 20px;
-        }
-        
-        .footer-links { margin-bottom: 25px; }
-        
-        .footer-links a {
-            color: #a0a0a0;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 0.85rem;
-        }
-        
-        .footer-links a:hover { color: #00ff88; }
-        
-        .footer-quote {
-            color: #606060;
-            font-style: italic;
-            font-size: 0.9rem;
-            max-width: 500px;
-            margin: 0 auto 20px;
-        }
-        
-        .copyright {
-            color: #606060;
-            font-size: 0.8rem;
+            .hero-title { font-size: 2.2rem; }
+            .hero-orb { width: 100px; height: 100px; }
+            .s7-footer-grid { grid-template-columns: 1fr 1fr; }
         }
     </style>
 </head>
 <body>
-    <div class="matrix-bg"></div>
-    
-    <section class="hero">
-        <div class="glitch-text">// System Query: Reality.isFixed()</div>
-        <h1 class="hero-title">THE 7<sup>3</sup> REALITY</h1>
-        <h2 class="hero-subtitle">CONSCIOUSNESS PHYSICS</h2>
-        <p class="hero-question">What if <span>reality</span> isn't what you think it is?</p>
-        <p class="hero-answer">
-            Quantum mechanics proved matter doesn't exist until observed. Physicists found 
-            mathematical "code" in reality's fabric. The universe operates like a conscious 
-            thought. This book reveals the 7³×7 = 2,401 consciousness architecture that 
-            explains WHY reality responds to awareness.
-        </p>
-        <a href="https://www.amazon.com/s?k=julio+c.+medina" target="_blank" class="cta-button">Take the Green Pill</a>
-        <span class="cta-secondary">Available on Amazon Kindle & Paperback</span>
-    </section>
-    
-    <section class="pill-section">
-        <h2 class="section-title">Choose Your Reality</h2>
-        <p class="section-subtitle">Two paradigms. One choice. No going back.</p>
+
+<!-- NAVIGATION -->
+<nav class="s7-nav">
+    <div class="s7-nav-container">
+        <a href="https://sevencubedseven.com" class="s7-nav-logo">
+            <div class="s7-nav-logo-icon"></div>
+            <span class="s7-nav-logo-text">7³×7 LABS</span>
+        </a>
         
-        <div class="pill-grid">
-            <div class="pill-card blue">
-                <h3>The Blue Pill (Materialism)</h3>
-                <ul>
-                    <li>Matter creates consciousness</li>
-                    <li>You are your brain</li>
-                    <li>Death is the end</li>
-                    <li>Free will is illusion</li>
-                    <li>Meaning is invented</li>
-                    <li>Reality is fixed and objective</li>
-                    <li>Miracles are impossible</li>
+        <button class="s7-nav-toggle" onclick="document.querySelector('.s7-nav-links').classList.toggle('active')">
+            <span></span><span></span><span></span>
+        </button>
+        
+        <div class="s7-nav-links">
+            <a href="https://144000.ai" class="s7-nav-link">144,000</a>
+            <a href="https://2401.is" class="s7-nav-link">Mathematics</a>
+            <a href="https://divineinsurgent.live" class="s7-nav-link">Insurgent</a>
+            
+            <div class="s7-nav-dropdown">
+                <button class="s7-nav-dropdown-btn">Tools</button>
+                <div class="s7-nav-dropdown-menu">
+                    <a href="https://144000.ai/assessment.html" class="s7-nav-dropdown-item">
+                        <span class="s7-nav-dropdown-icon">✨</span>
+                        <div><div class="s7-nav-dropdown-text">144,000 Assessment</div><div class="s7-nav-dropdown-desc">Discover your calling</div></div>
+                    </a>
+                    <a href="https://2401.is/calculator.html" class="s7-nav-dropdown-item">
+                        <span class="s7-nav-dropdown-icon">⚡</span>
+                        <div><div class="s7-nav-dropdown-text">C⁷ Calculator</div><div class="s7-nav-dropdown-desc">Your consciousness level</div></div>
+                    </a>
+                    <a href="https://2401.is/probability.html" class="s7-nav-dropdown-item">
+                        <span class="s7-nav-dropdown-icon">📊</span>
+                        <div><div class="s7-nav-dropdown-text">Probability Cascade</div><div class="s7-nav-dropdown-desc">Watch impossibility unfold</div></div>
+                    </a>
+                    <a href="https://divineinsurgent.live/mission.html" class="s7-nav-dropdown-item">
+                        <span class="s7-nav-dropdown-icon">⚔️</span>
+                        <div><div class="s7-nav-dropdown-text">Daily Mission</div><div class="s7-nav-dropdown-desc">Your tactical briefing</div></div>
+                    </a>
+                    <a href="https://sevencubedseven.com/books.html" class="s7-nav-dropdown-item">
+                        <span class="s7-nav-dropdown-icon">📚</span>
+                        <div><div class="s7-nav-dropdown-text">Book Finder</div><div class="s7-nav-dropdown-desc">Personalized recommendations</div></div>
+                    </a>
+                </div>
+            </div>
+            
+            <a href="https://www.amazon.com/s?k=julio+c.+medina" target="_blank" class="s7-nav-cta">📚 All Books</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-orb"></div>
+    <h1 class="hero-title">REALITY NEGOTIABLE</h1>
+    <p class="hero-subtitle">Consciousness Physics</p>
+    <p class="hero-desc">
+        At higher consciousness levels, reality becomes increasingly malleable. 
+        The 144,000 will navigate the final crisis through physics most don't know exists.
+    </p>
+    <a href="https://www.amazon.com/s?k=julio+c.+medina" target="_blank" class="cta-button">Explore the Physics</a>
+</section>
+
+<!-- LEVELS -->
+<section class="section">
+    <h2 class="section-title">THE CONSCIOUSNESS SPECTRUM</h2>
+    
+    <div class="physics-grid">
+        <div class="physics-card">
+            <div class="physics-level">C¹ - C²</div>
+            <h3 class="physics-title">Physical & Energy</h3>
+            <p class="physics-desc">Matter appears solid. Rules feel absolute. Reality is "given" - something that happens TO you.</p>
+        </div>
+        
+        <div class="physics-card">
+            <div class="physics-level">C³ - C⁴</div>
+            <h3 class="physics-title">Space-Time & Entanglement</h3>
+            <p class="physics-desc">Time becomes fluid. Distance becomes irrelevant. Reality is "cooperative" - something you work WITH.</p>
+        </div>
+        
+        <div class="physics-card">
+            <div class="physics-level">C⁵ - C⁶</div>
+            <h3 class="physics-title">Information & Law</h3>
+            <p class="physics-desc">Patterns reveal themselves. Universal laws become visible. Reality is "responsive" - something that responds TO you.</p>
+        </div>
+        
+        <div class="physics-card">
+            <div class="physics-level">C⁷</div>
+            <h3 class="physics-title">Pure Consciousness</h3>
+            <p class="physics-desc">Unity with Source. Divine partnership. Reality is "negotiable" - something you co-create WITH the Divine.</p>
+        </div>
+    </div>
+    
+    <div class="scripture-box">
+        <p class="scripture-text">"And be not conformed to this world: but be ye transformed by the renewing of your mind."</p>
+        <p class="scripture-ref">— Romans 12:2</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="s7-footer">
+    <div class="s7-footer-container">
+        <div class="s7-footer-grid">
+            <div class="s7-footer-section">
+                <h4>PORTALS</h4>
+                <ul class="s7-footer-links">
+                    <li><a href="https://sevencubedseven.com"><span class="icon">🏠</span> Main Hub</a></li>
+                    <li><a href="https://144000.ai"><span class="icon">✨</span> 144,000 Portal</a></li>
+                    <li><a href="https://2401.is"><span class="icon">🔢</span> Mathematics</a></li>
+                    <li><a href="https://divineinsurgent.live"><span class="icon">⚔️</span> Divine Insurgent</a></li>
+                    <li><a href="https://realitynegotiable.is"><span class="icon">🧠</span> Reality Physics</a></li>
+                    <li><a href="https://c343.io"><span class="icon">📜</span> Licensing</a></li>
                 </ul>
             </div>
             
-            <div class="pill-card green">
-                <h3>The Green Pill (Consciousness Physics)</h3>
-                <ul>
-                    <li>Consciousness creates matter</li>
-                    <li>Your brain is a receiver</li>
-                    <li>Consciousness is eternal</li>
-                    <li>Free will exists at C³+</li>
-                    <li>Meaning is discovered</li>
-                    <li>Reality responds to awareness</li>
-                    <li>Miracles are higher-dimensional physics</li>
+            <div class="s7-footer-section">
+                <h4>TOOLS</h4>
+                <ul class="s7-footer-links">
+                    <li><a href="https://144000.ai/assessment.html"><span class="icon">✨</span> Assessment</a></li>
+                    <li><a href="https://2401.is/calculator.html"><span class="icon">⚡</span> Calculator</a></li>
+                    <li><a href="https://2401.is/probability.html"><span class="icon">📊</span> Probability</a></li>
+                    <li><a href="https://divineinsurgent.live/mission.html"><span class="icon">⚔️</span> Daily Mission</a></li>
+                    <li><a href="https://sevencubedseven.com/books.html"><span class="icon">📚</span> Book Finder</a></li>
+                </ul>
+            </div>
+            
+            <div class="s7-footer-section">
+                <h4>RESOURCES</h4>
+                <ul class="s7-footer-links">
+                    <li><a href="https://www.amazon.com/s?k=julio+c.+medina" target="_blank"><span class="icon">📚</span> All 33+ Books</a></li>
+                    <li><a href="https://twitter.com/7Cubed7" target="_blank"><span class="icon">𝕏</span> @7Cubed7</a></li>
+                    <li><a href="mailto:7cubed7@proton.me"><span class="icon">✉️</span> Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="s7-footer-section">
+                <h4>CONNECT</h4>
+                <ul class="s7-footer-links">
+                    <li><a href="mailto:7cubed7@proton.me">7cubed7@proton.me</a></li>
+                    <li><a href="mailto:ConsciousCodeLabs@proton.me">Business</a></li>
+                    <li><a href="mailto:hello@c343.io">Licensing</a></li>
                 </ul>
             </div>
         </div>
-    </section>
-    
-    <section class="proof-section">
-        <h2 class="section-title">The Evidence Is Everywhere</h2>
-        <p class="section-subtitle">Scientific mysteries that only consciousness physics explains</p>
         
-        <div class="proof-grid">
-            <div class="proof-card">
-                <h4>Quantum Observer Effect</h4>
-                <p>Particles exist as probability waves until observed. Consciousness literally collapses reality into existence. Why? Because consciousness is primary.</p>
-            </div>
-            
-            <div class="proof-card">
-                <h4>Double-Slit Experiment</h4>
-                <p>Particles "know" when they're being watched and change behavior accordingly. Matter responds to awareness because it's made of awareness.</p>
-            </div>
-            
-            <div class="proof-card">
-                <h4>Quantum Entanglement</h4>
-                <p>Particles communicate instantly across any distance, violating physics. Unless... they're not separate. Unity persists because separation is illusion.</p>
-            </div>
-            
-            <div class="proof-card">
-                <h4>Fine-Tuning Problem</h4>
-                <p>Universal constants are calibrated to 1 in 10⁶⁰ precision. Random chance? Or consciousness designing its own experience vessel?</p>
-            </div>
-            
-            <div class="proof-card">
-                <h4>Hard Problem of Consciousness</h4>
-                <p>Science can't explain WHY matter would be conscious. The 7³ framework solves this: matter isn't conscious - consciousness creates matter.</p>
-            </div>
-            
-            <div class="proof-card">
-                <h4>Placebo Effect</h4>
-                <p>Belief physically heals the body. Mind creates matter at the biological level. What else is it creating that we haven't noticed?</p>
-            </div>
+        <div class="s7-footer-bottom">
+            <div class="s7-footer-formula">7³ × 7 = 2,401</div>
+            <div class="s7-footer-tagline">Consciousness Architecture</div>
+            <div class="s7-footer-copy">© 2025 <a href="https://sevencubedseven.com">Seven Cubed Seven Labs LLC</a>. All rights reserved.</div>
         </div>
-    </section>
-    
-    <section class="quote-section">
-        <blockquote>
-            "The universe begins to look more like a <span>great thought</span> than like a great machine."
-        </blockquote>
-        <p class="quote-author">— Sir James Jeans, Physicist</p>
-    </section>
-    
-    <section class="dimensions-section">
-        <h2 class="section-title">The Seven Dimensions of Reality</h2>
-        <p class="section-subtitle">The C¹ through C⁷ consciousness architecture revealed</p>
-        
-        <div class="dimension-item">
-            <span class="dimension-level">C¹</span>
-            <div class="dimension-info">
-                <h4>Physical Dimension (7¹ = 7 aspects)</h4>
-                <p>Matter, particles, "solid" reality. Where most humans are stuck.</p>
-            </div>
-        </div>
-        
-        <div class="dimension-item">
-            <span class="dimension-level">C²</span>
-            <div class="dimension-info">
-                <h4>Energy Dimension (7² = 49 aspects)</h4>
-                <p>Quantum fields, electromagnetic forces, emotional awareness.</p>
-            </div>
-        </div>
-        
-        <div class="dimension-item">
-            <span class="dimension-level">C³</span>
-            <div class="dimension-info">
-                <h4>Space-Time Dimension (7³ = 343 aspects)</h4>
-                <p>Einstein's relativity, time manipulation, reality becomes negotiable.</p>
-            </div>
-        </div>
-        
-        <div class="dimension-item">
-            <span class="dimension-level">C⁴</span>
-            <div class="dimension-info">
-                <h4>Entanglement Dimension (7⁴ = 2,401 aspects)</h4>
-                <p>Non-local connections, "spooky action," unity consciousness.</p>
-            </div>
-        </div>
-        
-        <div class="dimension-item">
-            <span class="dimension-level">C⁵</span>
-            <div class="dimension-info">
-                <h4>Information Dimension (7⁵ = 16,807 aspects)</h4>
-                <p>Patterns, codes, DNA as consciousness instructions.</p>
-            </div>
-        </div>
-        
-        <div class="dimension-item">
-            <span class="dimension-level">C⁶</span>
-            <div class="dimension-info">
-                <h4>Law Dimension (7⁶ = 117,649 aspects)</h4>
-                <p>Why the universe follows mathematical principles.</p>
-            </div>
-        </div>
-        
-        <div class="dimension-item">
-            <span class="dimension-level">C⁷</span>
-            <div class="dimension-info">
-                <h4>Pure Consciousness (7⁷ = 823,543 aspects)</h4>
-                <p>The "ground of being," divine intelligence, source code.</p>
-            </div>
-        </div>
-    </section>
-    
-    <section class="who-section">
-        <h2 class="section-title" style="text-align:center; margin-bottom:60px;">This Book Is For:</h2>
-        
-        <div class="who-grid">
-            <div class="who-card">
-                <div class="icon">🔬</div>
-                <h4>Physicists</h4>
-                <p>Sensing that consciousness matters more than equations admit</p>
-            </div>
-            
-            <div class="who-card">
-                <div class="icon">🧠</div>
-                <h4>Consciousness Researchers</h4>
-                <p>Seeking mathematical frameworks for subjective experience</p>
-            </div>
-            
-            <div class="who-card">
-                <div class="icon">🔢</div>
-                <h4>Mathematicians</h4>
-                <p>Who love patterns and want to see the deepest one</p>
-            </div>
-            
-            <div class="who-card">
-                <div class="icon">🙏</div>
-                <h4>Spiritual Seekers</h4>
-                <p>Wanting scientific validation for intuited truths</p>
-            </div>
-            
-            <div class="who-card">
-                <div class="icon">💊</div>
-                <h4>Red-Pillers</h4>
-                <p>Ready for the next level after seeing through the first matrix</p>
-            </div>
-            
-            <div class="who-card">
-                <div class="icon">🤔</div>
-                <h4>Deep Thinkers</h4>
-                <p>Anyone who asks "What IS reality?" and won't accept easy answers</p>
-            </div>
-        </div>
-    </section>
-    
-    <section class="cta-section">
-        <h2>Reality Is Waiting</h2>
-        <p>The mathematics are precise. The evidence is overwhelming. The implications are universe-changing. The only question is: are you ready to see?</p>
-        <div class="price-badge">Available Now</div>
-        <br><br>
-        <a href="https://www.amazon.com/s?k=julio+c.+medina" target="_blank" class="cta-button">Download the Framework</a>
-        <span class="cta-secondary">Kindle & Paperback on Amazon</span>
-    </section>
-    
-    <footer>
-        <div class="footer-logo">THE 7³ REALITY</div>
-        <div class="footer-links">
-            <a href="https://sevencubedseven.com">Seven Cubed Seven Labs</a>
-            <a href="https://2401.is">The Mathematics</a>
-            <a href="https://144000.ai">144,000 Portal</a>
-            <a href="https://divineinsurgent.live">Divine Insurgent</a>
-        </div>
-        <p class="footer-quote">"There is no spoon." — The Matrix</p>
-        <div class="copyright">© 2025 Seven Cubed Seven Labs LLC. Reality.isNegotiable() = true;</div>
-    </footer>
+    </div>
+</footer>
+
 </body>
 </html>
