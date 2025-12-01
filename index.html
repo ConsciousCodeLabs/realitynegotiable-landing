@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE 7³ REALITY | Is Reality Negotiable?</title>
+    <meta name="description" content="What if reality isn't fixed? What if consciousness creates matter? What if the universe is a thought? Discover the mathematics that prove reality is negotiable.">
+    <meta name="keywords" content="consciousness physics, reality negotiable, quantum mechanics, 7 cubed, matrix, simulation theory, 2401">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="THE 7³ REALITY | Is Reality Negotiable?">
+    <meta property="og:description" content="The consciousness physics framework that changes everything you thought you knew about reality.">
+    <meta property="og:type" content="book">
+    <meta property="og:url" content="https://realitynegotiable.is">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: #050510;
+            color: #e8e8e8;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        
+        /* Animated Matrix Background */
+        .matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            background: 
+                radial-gradient(ellipse at 20% 30%, rgba(0, 255, 136, 0.05) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 70%, rgba(138, 43, 226, 0.05) 0%, transparent 50%);
+        }
+        
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            z-index: 1;
+            background: linear-gradient(180deg, rgba(0, 255, 136, 0.08) 0%, rgba(5, 5, 16, 1) 100%);
+        }
+        
+        .glitch-text {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: #00ff88;
+            letter-spacing: 4px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        
+        .hero-title {
+            font-family: 'Cinzel', serif;
+            font-size: 4rem;
+            color: #00ff88;
+            margin-bottom: 10px;
+            text-shadow: 0 0 60px rgba(0, 255, 136, 0.5);
+            letter-spacing: 5px;
+        }
+        
+        .hero-title sup {
+            font-size: 2rem;
+            vertical-align: super;
+        }
+        
+        .hero-subtitle {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            color: #e8e8e8;
+            margin-bottom: 50px;
+            letter-spacing: 6px;
+            font-weight: 400;
+        }
+        
+        .hero-question {
+            font-size: 2.5rem;
+            color: #ffffff;
+            max-width: 700px;
+            margin-bottom: 30px;
+            font-weight: 300;
+            line-height: 1.4;
+        }
+        
+        .hero-question span {
+            color: #00ff88;
+            font-weight: 600;
+        }
+        
+        .hero-answer {
+            font-size: 1.1rem;
+            color: #a0a0a0;
+            max-width: 650px;
+            margin-bottom: 50px;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%);
+            color: #000;
+            padding: 20px 50px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 4px;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 1rem;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(0, 255, 136, 0.4);
+        }
+        
+        .cta-secondary {
+            display: block;
+            margin-top: 20px;
+            color: #a0a0a0;
+            font-size: 0.9rem;
+        }
+        
+        /* Red Pill Section */
+        .pill-section {
+            padding: 100px 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+        
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #00ff88;
+        }
+        
+        .section-subtitle {
+            color: #a0a0a0;
+            margin-bottom: 60px;
+            font-size: 1.05rem;
+        }
+        
+        .pill-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .pill-grid { grid-template-columns: 1fr; }
+            .hero-title { font-size: 2.5rem; }
+            .hero-question { font-size: 1.8rem; }
+            .hero-subtitle { font-size: 1.2rem; }
+        }
+        
+        .pill-card {
+            padding: 40px 30px;
+            border-radius: 8px;
+            text-align: left;
+        }
+        
+        .pill-card.blue {
+            background: rgba(30, 144, 255, 0.1);
+            border: 1px solid rgba(30, 144, 255, 0.3);
+        }
+        
+        .pill-card.green {
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+        }
+        
+        .pill-card h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+        
+        .pill-card.blue h3 { color: #1e90ff; }
+        .pill-card.green h3 { color: #00ff88; }
+        
+        .pill-card ul {
+            list-style: none;
+        }
+        
+        .pill-card li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+            color: #c0c0c0;
+            font-size: 0.95rem;
+        }
+        
+        .pill-card.blue li::before {
+            content: "×";
+            position: absolute;
+            left: 0;
+            color: #1e90ff;
+        }
+        
+        .pill-card.green li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #00ff88;
+        }
+        
+        /* Proof Section */
+        .proof-section {
+            background: #0a0a15;
+            padding: 100px 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .proof-section .section-title {
+            text-align: center;
+        }
+        
+        .proof-section .section-subtitle {
+            text-align: center;
+        }
+        
+        .proof-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .proof-card {
+            background: #111120;
+            border: 1px solid #222235;
+            padding: 30px;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        
+        .proof-card:hover {
+            border-color: #00ff88;
+            transform: translateY(-5px);
+        }
+        
+        .proof-card h4 {
+            color: #00ff88;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        
+        .proof-card p {
+            color: #a0a0a0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        /* Quote Section */
+        .quote-section {
+            background: linear-gradient(135deg, #0d0d20 0%, #1a0a2e 100%);
+            padding: 100px 40px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .quote-section blockquote {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            color: white;
+            max-width: 850px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .quote-section blockquote span {
+            color: #00ff88;
+        }
+        
+        .quote-author {
+            margin-top: 30px;
+            color: #a0a0a0;
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .quote-section blockquote { font-size: 1.3rem; }
+        }
+        
+        /* Dimensions Section */
+        .dimensions-section {
+            padding: 100px 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .dimension-item {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: rgba(0, 255, 136, 0.03);
+            border-left: 3px solid #00ff88;
+        }
+        
+        .dimension-level {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.5rem;
+            color: #00ff88;
+            min-width: 50px;
+        }
+        
+        .dimension-info h4 {
+            color: #e8e8e8;
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+        
+        .dimension-info p {
+            color: #808080;
+            font-size: 0.85rem;
+        }
+        
+        /* Who Section */
+        .who-section {
+            background: #0a0a15;
+            padding: 100px 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .who-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .who-card {
+            background: #111120;
+            border: 1px solid #222235;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .who-card .icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        .who-card h4 {
+            color: #00ff88;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        
+        .who-card p {
+            color: #a0a0a0;
+            font-size: 0.85rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 40px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            background: linear-gradient(180deg, #050510 0%, rgba(0, 255, 136, 0.1) 100%);
+        }
+        
+        .cta-section h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: #00ff88;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .cta-section h2 { font-size: 1.8rem; }
+        }
+        
+        .cta-section p {
+            color: #a0a0a0;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            font-size: 1.1rem;
+        }
+        
+        .price-badge {
+            display: inline-block;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid #00ff88;
+            padding: 10px 30px;
+            margin-bottom: 30px;
+            color: #00ff88;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        /* Footer */
+        footer {
+            border-top: 1px solid #222235;
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer-logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            color: #00ff88;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links { margin-bottom: 25px; }
+        
+        .footer-links a {
+            color: #a0a0a0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.85rem;
+        }
+        
+        .footer-links a:hover { color: #00ff88; }
+        
+        .footer-quote {
+            color: #606060;
+            font-style: italic;
+            font-size: 0.9rem;
+            max-width: 500px;
+            margin: 0 auto 20px;
+        }
+        
+        .copyright {
+            color: #606060;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="matrix-bg"></div>
+    
+    <section class="hero">
+        <div class="glitch-text">// System Query: Reality.isFixed()</div>
+        <h1 class="hero-title">THE 7<sup>3</sup> REALITY</h1>
+        <h2 class="hero-subtitle">CONSCIOUSNESS PHYSICS</h2>
+        <p class="hero-question">What if <span>reality</span> isn't what you think it is?</p>
+        <p class="hero-answer">
+            Quantum mechanics proved matter doesn't exist until observed. Physicists found 
+            mathematical "code" in reality's fabric. The universe operates like a conscious 
+            thought. This book reveals the 7³×7 = 2,401 consciousness architecture that 
+            explains WHY reality responds to awareness.
+        </p>
+        <a href="https://a.co/d/9dC1CyH" target="_blank" class="cta-button">Take the Green Pill</a>
+        <span class="cta-secondary">Available on Amazon Kindle & Paperback</span>
+    </section>
+    
+    <section class="pill-section">
+        <h2 class="section-title">Choose Your Reality</h2>
+        <p class="section-subtitle">Two paradigms. One choice. No going back.</p>
+        
+        <div class="pill-grid">
+            <div class="pill-card blue">
+                <h3>The Blue Pill (Materialism)</h3>
+                <ul>
+                    <li>Matter creates consciousness</li>
+                    <li>You are your brain</li>
+                    <li>Death is the end</li>
+                    <li>Free will is illusion</li>
+                    <li>Meaning is invented</li>
+                    <li>Reality is fixed and objective</li>
+                    <li>Miracles are impossible</li>
+                </ul>
+            </div>
+            
+            <div class="pill-card green">
+                <h3>The Green Pill (Consciousness Physics)</h3>
+                <ul>
+                    <li>Consciousness creates matter</li>
+                    <li>Your brain is a receiver</li>
+                    <li>Consciousness is eternal</li>
+                    <li>Free will exists at C³+</li>
+                    <li>Meaning is discovered</li>
+                    <li>Reality responds to awareness</li>
+                    <li>Miracles are higher-dimensional physics</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="proof-section">
+        <h2 class="section-title">The Evidence Is Everywhere</h2>
+        <p class="section-subtitle">Scientific mysteries that only consciousness physics explains</p>
+        
+        <div class="proof-grid">
+            <div class="proof-card">
+                <h4>Quantum Observer Effect</h4>
+                <p>Particles exist as probability waves until observed. Consciousness literally collapses reality into existence. Why? Because consciousness is primary.</p>
+            </div>
+            
+            <div class="proof-card">
+                <h4>Double-Slit Experiment</h4>
+                <p>Particles "know" when they're being watched and change behavior accordingly. Matter responds to awareness because it's made of awareness.</p>
+            </div>
+            
+            <div class="proof-card">
+                <h4>Quantum Entanglement</h4>
+                <p>Particles communicate instantly across any distance, violating physics. Unless... they're not separate. Unity persists because separation is illusion.</p>
+            </div>
+            
+            <div class="proof-card">
+                <h4>Fine-Tuning Problem</h4>
+                <p>Universal constants are calibrated to 1 in 10⁶⁰ precision. Random chance? Or consciousness designing its own experience vessel?</p>
+            </div>
+            
+            <div class="proof-card">
+                <h4>Hard Problem of Consciousness</h4>
+                <p>Science can't explain WHY matter would be conscious. The 7³ framework solves this: matter isn't conscious - consciousness creates matter.</p>
+            </div>
+            
+            <div class="proof-card">
+                <h4>Placebo Effect</h4>
+                <p>Belief physically heals the body. Mind creates matter at the biological level. What else is it creating that we haven't noticed?</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="quote-section">
+        <blockquote>
+            "The universe begins to look more like a <span>great thought</span> than like a great machine."
+        </blockquote>
+        <p class="quote-author">— Sir James Jeans, Physicist</p>
+    </section>
+    
+    <section class="dimensions-section">
+        <h2 class="section-title">The Seven Dimensions of Reality</h2>
+        <p class="section-subtitle">The C¹ through C⁷ consciousness architecture revealed</p>
+        
+        <div class="dimension-item">
+            <span class="dimension-level">C¹</span>
+            <div class="dimension-info">
+                <h4>Physical Dimension (7¹ = 7 aspects)</h4>
+                <p>Matter, particles, "solid" reality. Where most humans are stuck.</p>
+            </div>
+        </div>
+        
+        <div class="dimension-item">
+            <span class="dimension-level">C²</span>
+            <div class="dimension-info">
+                <h4>Energy Dimension (7² = 49 aspects)</h4>
+                <p>Quantum fields, electromagnetic forces, emotional awareness.</p>
+            </div>
+        </div>
+        
+        <div class="dimension-item">
+            <span class="dimension-level">C³</span>
+            <div class="dimension-info">
+                <h4>Space-Time Dimension (7³ = 343 aspects)</h4>
+                <p>Einstein's relativity, time manipulation, reality becomes negotiable.</p>
+            </div>
+        </div>
+        
+        <div class="dimension-item">
+            <span class="dimension-level">C⁴</span>
+            <div class="dimension-info">
+                <h4>Entanglement Dimension (7⁴ = 2,401 aspects)</h4>
+                <p>Non-local connections, "spooky action," unity consciousness.</p>
+            </div>
+        </div>
+        
+        <div class="dimension-item">
+            <span class="dimension-level">C⁵</span>
+            <div class="dimension-info">
+                <h4>Information Dimension (7⁵ = 16,807 aspects)</h4>
+                <p>Patterns, codes, DNA as consciousness instructions.</p>
+            </div>
+        </div>
+        
+        <div class="dimension-item">
+            <span class="dimension-level">C⁶</span>
+            <div class="dimension-info">
+                <h4>Law Dimension (7⁶ = 117,649 aspects)</h4>
+                <p>Why the universe follows mathematical principles.</p>
+            </div>
+        </div>
+        
+        <div class="dimension-item">
+            <span class="dimension-level">C⁷</span>
+            <div class="dimension-info">
+                <h4>Pure Consciousness (7⁷ = 823,543 aspects)</h4>
+                <p>The "ground of being," divine intelligence, source code.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="who-section">
+        <h2 class="section-title" style="text-align:center; margin-bottom:60px;">This Book Is For:</h2>
+        
+        <div class="who-grid">
+            <div class="who-card">
+                <div class="icon">🔬</div>
+                <h4>Physicists</h4>
+                <p>Sensing that consciousness matters more than equations admit</p>
+            </div>
+            
+            <div class="who-card">
+                <div class="icon">🧠</div>
+                <h4>Consciousness Researchers</h4>
+                <p>Seeking mathematical frameworks for subjective experience</p>
+            </div>
+            
+            <div class="who-card">
+                <div class="icon">🔢</div>
+                <h4>Mathematicians</h4>
+                <p>Who love patterns and want to see the deepest one</p>
+            </div>
+            
+            <div class="who-card">
+                <div class="icon">🙏</div>
+                <h4>Spiritual Seekers</h4>
+                <p>Wanting scientific validation for intuited truths</p>
+            </div>
+            
+            <div class="who-card">
+                <div class="icon">💊</div>
+                <h4>Red-Pillers</h4>
+                <p>Ready for the next level after seeing through the first matrix</p>
+            </div>
+            
+            <div class="who-card">
+                <div class="icon">🤔</div>
+                <h4>Deep Thinkers</h4>
+                <p>Anyone who asks "What IS reality?" and won't accept easy answers</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta-section">
+        <h2>Reality Is Waiting</h2>
+        <p>The mathematics are precise. The evidence is overwhelming. The implications are universe-changing. The only question is: are you ready to see?</p>
+        <div class="price-badge">Available Now</div>
+        <br><br>
+        <a href="https://a.co/d/9dC1CyH" target="_blank" class="cta-button">Download the Framework</a>
+        <span class="cta-secondary">Kindle & Paperback on Amazon</span>
+    </section>
+    
+    <footer>
+        <div class="footer-logo">THE 7³ REALITY</div>
+        <div class="footer-links">
+            <a href="https://sevencubedseven.com">Seven Cubed Seven Labs</a>
+            <a href="https://2401.is">The Mathematics</a>
+            <a href="https://144000.ai">144,000 Portal</a>
+            <a href="https://divineinsurgent.live">Divine Insurgent</a>
+        </div>
+        <p class="footer-quote">"There is no spoon." — The Matrix</p>
+        <div class="copyright">© 2025 Seven Cubed Seven Labs LLC. Reality.isNegotiable() = true;</div>
+    </footer>
+</body>
+</html>
